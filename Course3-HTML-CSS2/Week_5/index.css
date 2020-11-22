@@ -1,0 +1,154 @@
+#container {
+    width: 984px;
+    height: 1614px;
+    background-color: #f6f5f3;
+    padding: 18px white;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    margin-right: 75px;
+}
+
+.quote_offroad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offroad_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+blockquote {
+    font: 36px Arial, sans-serif;
+}
+
+.arrow {
+    background-color: #ffdb4a;
+    border-radius: 50%;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 5px #f79a57;
+}
+
+.arrow:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.left_arrow {
+    margin: 0 0 0 74px;
+}
+
+.right_arrow {
+    margin: 0 74px 0 0;
+}
+
+.offroad_cars_img {
+    width: 596px;
+    height: 125px;
+}
+
+.text {
+    cursor: text;
+}
+
+.video_container {
+    width: 641px;
+    height: 361px;
+    margin: 60px auto;
+    position: relative;
+    background-image: url(images/video.jpg);
+}
+
+h4 {
+    font: 29.02px Arial, sans-serif;
+    color: white;
+    background: rgba(97, 100, 104, 0.7);
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play_button_container {
+    position: relative;
+    left: 256px;
+    top: 50px;
+    width: 126px;
+    height: 126px;
+    background-color: #ffdb4a;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #f79a57;
+}
+
+.play_button {
+    position: relative;
+    left: 47px;
+    top: 36px;
+}
+
+.play_button_container:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+h1 {
+    font: 47px Arial, sans-serif;
+    text-align: center;
+}
+
+.methods {
+    display: flex;
+    justify-content: space-around;
+}
+
+.method {
+    width: 240px;
+    padding: 0 22px 0 42px;
+    box-sizing: padding-box;
+}
+
+h3 {
+    font: 30px Arial, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.method_info {
+    font: 16px Arial, sans-serif;
+}
+
+h2 {
+    font: 42px Arial, sans-serif;
+    text-align: center;
+}
+
+.try {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 319px;
+    height: 70px;
+    background: radial-gradient(circle at 50% 0, #ffe348 0%, #ffdb03 100%);
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: transparent;
+    font: 36px Arial;
+}
+
+button:hover {
+    background: linear-gradient( #ffe868, #ffe130);
+    cursor: pointer;
+}

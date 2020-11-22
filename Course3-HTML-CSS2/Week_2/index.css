@@ -1,0 +1,148 @@
+body {
+    background-color: khaki;
+}
+
+.wrapper {
+    box-sizing: content-box;
+    position: relative;
+    margin: 8% auto;
+    background-color: lemonchiffon;
+    width: 1300px;
+    height: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    left: 600px;
+    top: 450px;
+    z-index: 1;
+}
+
+.items {
+    position: relative;
+    white-space: nowrap;
+}
+
+.item_description {
+    display: inline-block;
+    width: 290px;
+    position: relative;
+    margin: 25px 0 25px 25px;
+    top: 140px;
+}
+
+.item_description img {
+    height: 183px;
+    width: 290px;
+    position: relative;
+}
+
+.item_description .description {
+    display: none;
+    text-align: center;
+    font-size: 1rem;
+    white-space: normal;
+}
+
+input[name="show_picture"] {
+    display: none;
+}
+
+.slider#button-1:checked ~ .items {
+    left: 0;
+}
+
+.slider#button-2:checked ~ .items {
+    left: -957px;
+}
+
+.slider#button-3:checked ~ .items {
+    left: -1914px;
+}
+
+.item_description:hover {
+    position: absolute;
+    padding: 5px;
+    background-color: khaki;
+    z-index: 4;
+}
+
+.item_description:hover > .description {
+    display: inline;
+}
+
+.item_description:hover ~ .item_description {
+    position: relative;
+    left: 320px;
+}
+
+.item_description label img:hover {
+    cursor: pointer;
+}
+
+.item_description label img {
+    height: 183px;
+    width: 290px;
+    position: relative;
+}
+
+input[name="show_picture"]:checked + .item_description label {
+    position: fixed;
+    top: 155px;
+    left: 390px;
+    z-index: 6;
+}
+
+input[name="show_picture"]:checked + .item_description label img {
+    width: 800px;
+    height: 500px;;
+}
+
+input[name="show_picture"]:checked + .item_description .description {
+    display: none;
+}
+
+input[name="show_picture"]:checked + .item_description:hover {
+    padding: 0;
+}
+
+input[name="show_picture"]:checked ~ .modal_window {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+input#close_picture {
+    display: none;
+}
+
+input[name="show_picture"]#close_picture:checked + label[for="close_picture"] {
+    display: none;
+}
+
+input[name="show_picture"]:checked ~ label[for="close_picture"] {
+    display: block;
+    position: fixed;
+    color: white;
+    opacity: 0.9;
+    z-index: 7;
+    top: 1.25%;
+    left: 97%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+input[name="show_picture"]#close_picture:checked ~ .modal_window {
+    display: none;
+}
+
+label[for="close_picture"]:hover {
+    transform: scale(1.5);
+}

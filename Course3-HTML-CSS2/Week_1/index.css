@@ -1,0 +1,168 @@
+h1, h2 {
+    text-align: center;
+}
+
+#block_image {
+    height: 32px;
+    padding: 2% 0.5% 2% 2%;
+}
+
+#line_image {
+    height: 32px;
+    padding: 2% 2% 2% 0.5%;
+}
+
+.block_line_input {
+    display: none;
+}
+
+.cats_images {
+    height: 300px;
+    padding: 2%;
+    display: inline-block;
+}
+
+.cats_cards {
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 4%;
+    vertical-align: top;
+}
+
+footer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.footer_text {
+    text-align: center;
+}
+
+.rating_stars {
+    display: inline-block;
+    margin-top: 1%;
+
+}
+
+.rating_stars input {
+    display: none;
+}
+
+.rating_stars label {
+    float: right;
+    color: #ddd;
+}
+
+.rating_stars input:checked ~ label {
+    color: gold;
+}
+
+.rating_stars label:hover, .rating_stars label:hover ~ label {
+    color: gold;
+}
+
+.cats_price {
+    margin: 2% 0;
+}
+
+.cats_info_title {
+    display: inline-block;
+    margin: 3% 0;
+}
+
+.old_price {
+    text-decoration: line-through;
+    margin-left: 1%;
+}
+
+.new_price {
+    color: firebrick;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.cats_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#line:checked section {
+    display: table;
+}
+
+#block:checked ~ section .cats_cards {
+    display: inline-block;
+    width: 370px;
+    vertical-align: top;
+    margin: 2%;
+    padding: 2%;
+}
+
+#line:checked ~ section .cats_cards {
+    display: table-row;
+    padding: 4%;
+}
+
+.display {
+    cursor: pointer;
+}
+
+.cats_info {
+    display: block;
+    position: relative;
+}
+
+#block:checked ~ section .cats_cards .cats_images {
+    height: 300px;
+    width: auto;
+    vertical-align: bottom;
+    padding: 0 2% 2% 2%;
+    margin: auto;
+}
+
+#line:checked ~ section .cats_cards .cats_images {
+    width: 300px;
+    height: auto;
+    display: table-cell;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.cats_title_rating {
+    display: block;
+    position: relative;
+}
+
+#block:checked ~ section .cats_cards .cats_info {
+    display: block;
+}
+
+#line:checked ~ section .cats_cards .cats_info {
+    display: table-cell;
+    vertical-align: top;
+    width: 38%;
+}
+
+#block:checked ~ section .cats_cards .cats_title_rating {
+    display: block;
+}
+
+#line:checked ~ section .cats_cards .cats_title_rating {
+    display: table-cell;
+    vertical-align: top;
+    width: 40%;
+    padding: 2%;
+}
+
+.cats_cards .cats_ref img:hover {
+    opacity: 0.7;
+}
+
+.cats_cards .cats_ref:hover ~ .cats_title_rating .cats_title .cats_ref {
+    color: red;
+}
+
+.cats_cards .cats_title_rating .cats_title .cats_ref:hover {
+    color: red;
+}
